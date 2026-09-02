@@ -2,7 +2,8 @@
 // EVALUASI WEBSITE
 // GANTI APP_SCRIPT_URL dengan URL Web App Apps Script Anda.
 // ============================================================
-const APP_SCRIPT_URL = "PASTE_URL_WEB_APP_APPS_SCRIPT_DI_SINI";
+const APP_SCRIPT_URL =
+"https://script.google.com/macros/s/AKfycbwMPhEihjIgZ5wxSRVrbfxTA43XB9_fceEOLOhDgzw_6CNylXk7C6iZphHu_2vY6NJS/exec";
 
 const QUESTIONS = [
   "Website ini mudah digunakan.",
