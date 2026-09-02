@@ -1,0 +1,42 @@
+PANDUAN INSTALASI
+
+1. Buka Google Spreadsheet Anda:
+https://docs.google.com/spreadsheets/d/1hs4sylpt7E9WIOSLvmx78ciPHFTtpmHl/edit
+
+2. Pilih Extensions > Apps Script.
+
+3. Salin isi Code.gs ke Apps Script.
+
+4. Simpan.
+
+5. Jalankan setupEvaluasi() satu kali dari Apps Script.
+   Berikan izin akses jika diminta.
+
+6. Pilih Deploy > New deployment.
+
+7. Pilih Web app.
+   Execute as: Me
+   Who has access: Anyone
+
+8. Klik Deploy dan salin URL Web App yang berakhiran /exec.
+
+9. Buka script.js dan cari:
+   const APP_SCRIPT_URL = "PASTE_URL_WEB_APP_APPS_SCRIPT_DI_SINI";
+
+10. Ganti dengan URL Web App Anda, misalnya:
+   const APP_SCRIPT_URL = "https://script.google.com/macros/s/XXXXX/exec";
+
+11. Buka index.html.
+
+DATA YANG MASUK KE SHEET "Evaluasi":
+Timestamp | Email | Password | J1 | J2 | J3 | J4 | J5 | Rata-rata
+
+CATATAN KEAMANAN:
+Versi ini memang menyimpan password sesuai permintaan Anda.
+Password disimpan sebagai teks biasa di Google Spreadsheet.
+JANGAN gunakan password Gmail/Google, perbankan, atau password penting.
+Gunakan password khusus untuk sistem evaluasi.
+
+PENTING:
+Jangan menjalankan doPost(e) dengan tombol Run karena fungsi tersebut
+hanya menerima event ketika website mengirim HTTP POST.

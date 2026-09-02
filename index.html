@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evaluasi Website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="page">
+<section id="loginCard" class="card">
+  <div class="brand">
+    <div class="google-g">G</div>
+    <h1>Evaluasi Website</h1>
+    <p>Masuk untuk mengisi evaluasi</p>
+  </div>
+  <form id="loginForm">
+    <label for="email">Email</label>
+    <input id="email" type="email" placeholder="Masukkan email" autocomplete="username" required>
+    <label for="password">Password</label>
+    <div class="password-box">
+      <input id="password" type="password" placeholder="Masukkan password" autocomplete="current-password" required>
+      <button type="button" id="togglePassword">Lihat</button>
+    </div>
+    <div class="notice">Login menggunakan akun google.</div>
+    <button class="primary" type="submit">Masuk</button>
+    <p id="loginMessage" class="message"></p>
+  </form>
+</section>
+
+<section id="surveyCard" class="card hidden">
+  <div class="survey-header">
+    <div>
+      <span class="eyebrow">EVALUASI</span>
+      <h1>Kuesioner Pengalaman Pengguna</h1>
+      <p id="loggedEmail"></p>
+    </div>
+    <div class="counter"><span id="answered">0</span>/5</div>
+  </div>
+  <form id="surveyForm">
+    <div id="questions"></div>
+    <div class="scale">
+      <strong>Skala:</strong> 1 = Sangat Tidak Setuju · 2 = Tidak Setuju ·
+      3 = Netral · 4 = Setuju · 5 = Sangat Setuju
+    </div>
+    <button class="primary" id="submitButton" type="submit">Kirim Evaluasi</button>
+    <p id="surveyMessage" class="message"></p>
+  </form>
+</section>
+
+<section id="successCard" class="card success hidden">
+  <div class="check">✓</div>
+  <h1>Terima kasih!</h1>
+  <p>Evaluasi Anda berhasil dikirim.</p>
+  <button class="secondary" id="againButton" type="button">Kembali</button>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

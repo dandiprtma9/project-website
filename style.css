@@ -1,0 +1,37 @@
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:#f6f8fc;color:#202124;font-family:Arial,Helvetica,sans-serif}
+.page{min-height:100vh;display:grid;place-items:center;padding:24px}
+.card{width:min(100%,560px);background:#fff;border:1px solid #dadce0;border-radius:18px;padding:34px;box-shadow:0 6px 28px rgba(60,64,67,.12)}
+.hidden{display:none!important}
+.brand{text-align:center;margin-bottom:26px}
+.google-g{width:46px;height:46px;margin:0 auto 14px;border-radius:50%;display:grid;place-items:center;background:#f1f3f4;color:#4285f4;font-size:29px;font-weight:700}
+h1{margin:0 0 7px;font-size:25px;font-weight:500}
+p{color:#5f6368;line-height:1.5}
+label{display:block;margin:17px 0 7px;font-size:14px;font-weight:600}
+input{width:100%;padding:14px;border:1px solid #dadce0;border-radius:8px;font-size:16px;outline:none}
+input:focus{border:2px solid #1a73e8;padding:13px}
+.password-box{position:relative}
+.password-box input{padding-right:72px}
+.password-box button{position:absolute;right:7px;top:7px;bottom:7px;border:0;background:transparent;color:#1a73e8;font-weight:600;cursor:pointer}
+.notice{font-size:12px;color:#5f6368;margin:12px 0 20px;line-height:1.5}
+.primary,.secondary{width:100%;border:0;border-radius:8px;padding:13px 18px;font-size:15px;font-weight:600;cursor:pointer}
+.primary{background:#1a73e8;color:#fff}
+.primary:hover{background:#1765cc}
+.secondary{background:#f1f3f4;color:#202124;margin-top:18px}
+.message{min-height:20px;font-size:13px;margin:12px 0 0}
+.message.error{color:#b3261e}
+.survey-header{display:flex;justify-content:space-between;gap:15px;border-bottom:1px solid #eee;padding-bottom:18px;margin-bottom:4px}
+.eyebrow{font-size:11px;letter-spacing:1.4px;color:#1a73e8;font-weight:700}
+.survey-header h1{font-size:22px;margin-top:6px}
+.survey-header p{font-size:13px;margin:4px 0}
+.counter{white-space:nowrap;color:#5f6368}
+.question{padding:18px 0;border-bottom:1px solid #eee}
+.question h2{font-size:15px;line-height:1.5;margin:0 0 13px}
+.options{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.option{border:1px solid #dadce0;border-radius:8px;padding:10px 4px;text-align:center;cursor:pointer;font-size:14px}
+.option input{display:none}
+.option:has(input:checked){border-color:#1a73e8;background:#e8f0fe;color:#174ea6;font-weight:700}
+.scale{margin:19px 0;padding:13px;background:#f8fafd;border-radius:8px;color:#5f6368;font-size:12px;line-height:1.6}
+.success{text-align:center}
+.check{width:62px;height:62px;margin:0 auto 17px;border-radius:50%;display:grid;place-items:center;background:#e6f4ea;color:#137333;font-size:34px;font-weight:700}
+@media(max-width:520px){.card{padding:24px 18px}.options{gap:4px}.option{font-size:12px;padding:9px 2px}}
